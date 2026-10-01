@@ -1,0 +1,65 @@
+:root {
+  --paper: #f3efe6;
+  --paper-2: #ebe5d8;
+  --card: #fbf9f4;
+  --ink: #16211d;
+  --ink-soft: #5d6862;
+  --line: #ddd5c4;
+  --accent: #e8573a;
+  --accent-ink: #1f4d3f;
+  --high: #c8402a;
+  --medium: #d99a22;
+  --low: #2f7a5c;
+  --radius: 14px;
+  --display: 'Fraunces', Georgia, serif;
+  --sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 85% -10%, rgba(232, 87, 58, 0.12), transparent 40%),
+    radial-gradient(circle at -10% 110%, rgba(31, 77, 63, 0.1), transparent 45%),
+    var(--paper);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  background: rgba(22, 33, 29, 0.07);
+  padding: 0.05em 0.35em;
+  border-radius: 4px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
